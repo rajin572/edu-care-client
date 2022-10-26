@@ -12,10 +12,10 @@ const CourseCheckOut = () => {
     console.log(data);
     return (
         <div className='mt-5'>
-            <h2 className='text-center'>Course Check Out</h2>
+            <h1 className='text-center my-5'>Course Check Out</h1>
             <div className='userDetails text-center'>
                 <img src={user?.photoURL} alt="" />
-                <h2>User Name: {user?.displayName}</h2>
+                <h4>User Name: {user?.displayName}</h4>
                 <p>User Email: {user?.email}</p>
             </div>
             <div>
