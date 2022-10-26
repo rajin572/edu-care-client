@@ -5,7 +5,7 @@ import { Container } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { FaGoogle } from "react-icons/fa";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/AuthProvider";
 
 const Login = () => {
@@ -65,6 +65,7 @@ const Login = () => {
             placeholder="Password"
           />
         </Form.Group>
+        <Form.Text className="my-5">Haven't Any Account ? <Link to='/register'>Please Register</Link></Form.Text>
         <Form.Text className="text-danger">{error}</Form.Text>
         <br />
         <Button variant="primary" type="submit">

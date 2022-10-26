@@ -2,13 +2,14 @@ import React, { useContext, useState } from "react";
 import { Container } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import { Link } from "react-router-dom";
 import { AuthContext } from "../../context/AuthProvider";
 
 
 const Register = () => {
     const [error, setError] = useState('')
     const [accepted, setAccepted] = useState(false)
-    const {createUser} = useContext(AuthContext)
+    const {createUser, updateProfileUser} = useContext(AuthContext)
   const handleregister = (event) => {
     event.preventDefault();
     const form = event.target;
@@ -23,6 +24,7 @@ const Register = () => {
             console.log(user);
             form.reset()
             setError('')
+            handleUpdateUserProfile(name,photoURL)
         })
         .catch(error =>
             {
@@ -30,6 +32,19 @@ const Register = () => {
                 setError(error.message)
             })
   }
+
+  const handleUpdateUserProfile = (name, photoURL)  =>{
+    const profile = {
+        displayName:name,
+        photoURL: photoURL
+    }
+    updateProfileUser(profile)
+    .then(()=>{})
+    .catch(error =>{
+        console.error(error);
+    })
+  }
+
   const handleChecked = event =>{
     setAccepted(event.target.checked);
   }
@@ -64,6 +79,7 @@ const Register = () => {
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
           <Form.Check onClick={handleChecked} type="checkbox" label="Check me out" />
         </Form.Group>
+        <Form.Text>Already Have An Account ? <Link to='/login'>Please Login</Link></Form.Text>
         <Form.Text className="text-danger">{error}</Form.Text>
         <br />
         <Button variant="primary" type="submit" disabled={!accepted}>
