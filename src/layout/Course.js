@@ -7,11 +7,11 @@ const Course = () => {
         <div>
             <Container>
                 <Row>
-                    <Col lg="2" className='d-none d-lg-block'>
+                    <Col lg="4" className='d-none d-lg-block'>
                         <h2>Leftside nav</h2>
                     </Col>
-                    <Col lg="7">
-                        <Outlet></Outlet>
+                    <Col lg="8">
+                        <h2>Right Side Content</h2>
                     </Col>
                 </Row>
             </Container>
