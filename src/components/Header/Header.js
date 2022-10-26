@@ -29,14 +29,15 @@ const Header = () => {
           <Nav>
             {
               user?.uid? 
-              <>
-              <p>{user?.email}</p>
-              <Button onClick={handleLogOut}>Log Out</Button>
-              </>
+              <div className="d-flex">
+                <p className="mx-2">{user?.email}</p>
+                <img  className="mx-2" style={{height:'30px', borderRadius: "100%"}} src={user?.photoURL} alt="" />
+                <Button className="mx-2"  variant="outline-dark" onClick={handleLogOut}>Log Out</Button>
+              </div>
               :
               <>
-            <Link className="a" to='/login'>Login</Link>
-            <Link className="a" to='/register'>Register</Link>
+            <Link className="a" to='/login'><Button  variant="outline-primary">Login</Button></Link>
+            <Link className="a" to='/register'><Button  variant="outline-primary">Register</Button></Link>
               </>
             }
           </Nav>

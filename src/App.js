@@ -1,11 +1,11 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Main from './layout/Main';
-import Home from './components/Home/Home';
 import Course from './layout/Course';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import Blog from './components/Blog/Blog';
+import Home from './components/Home/Home';
 
 function App() {
   const route = createBrowserRouter([
