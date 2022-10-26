@@ -16,7 +16,7 @@
     font-weight: bold;
     margin: 10px 0px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
     .homepage{
         display: flex;
         flex-direction: column-reverse;
