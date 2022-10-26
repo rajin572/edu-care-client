@@ -14,7 +14,9 @@ const CourseCard = ({data}) => {
             <h2>Price: {price}$</h2>
             <p>Author Name: <b>{author}</b></p>
         </div>
+        <div>
         <Link to={`/courseDetails/${id}`} className="w-100"><Button className="w-100 mt-4">Course Details</Button></Link>
+        </div>
     </div>
   );
 };

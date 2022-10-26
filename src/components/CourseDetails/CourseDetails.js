@@ -10,6 +10,9 @@ const CourseDetails = () => {
   return (
     <div className="cardAll">
         <div className="detailsCard">
+            <div className="bg-dark text-end p-3 mb-2">
+                <Button>Download PDF</Button>
+            </div>
             <img src={image} alt="" />
             <div>
                 <h3>{name}</h3>
