@@ -80,6 +80,7 @@ const Register = () => {
           <Form.Check onClick={handleChecked} type="checkbox" label="Check me out" />
         </Form.Group>
         <Form.Text>Already Have An Account ? <Link to='/login'>Please Login</Link></Form.Text>
+        <br />
         <Form.Text className="text-danger">{error}</Form.Text>
         <br />
         <Button variant="primary" type="submit" disabled={!accepted}>
