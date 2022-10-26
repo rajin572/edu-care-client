@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, Link, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Main from './layout/Main';
 import Course from './components/Course/Course';
@@ -52,6 +52,14 @@ function App() {
           element:<Blog></Blog>
         },
       ]
+    },
+    {
+      path: '*',
+      element: <div className='notFound'>
+        <h1>Not Found 404</h1>
+        <h2>You have enter the wrong route</h2>
+        <p><Link to='/'>Click here</Link> to visit our home page and enjoy</p>
+      </div>
     }
   ])
   return (
