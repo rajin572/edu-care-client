@@ -26,7 +26,7 @@ const CourseDetails = () => {
           <div className="details">
             <p>Author Name : {author}</p>
             <p>Current student : {currentStudent}</p>
-            <p>Price: {price}</p>
+            <p>Price: {price}$</p>
           </div>
           <div className="details">
             <Link variant="outline-info" to="/course">
