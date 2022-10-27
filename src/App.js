@@ -26,18 +26,18 @@ function App() {
         },
         {
           path:'/course',
-          loader: () => fetch('http://localhost:5000/datas'),
+          loader: () => fetch('https://edu-care-server-beta.vercel.app/datas'),
           element:<Course></Course>
         },
         {
           path:'/courseDetails/:id',
           element:<CourseDetails></CourseDetails>,
-          loader : ({params}) => fetch(`http://localhost:5000/datas/${params.id}`)
+          loader : ({params}) => fetch(`https://edu-care-server-beta.vercel.app/datas/${params.id}`)
         },
         {
           path:'/courseCheckOut/:id',
           element:<PrivateRoute><CourseCheckOut></CourseCheckOut></PrivateRoute>,
-          loader : ({params}) => fetch(`http://localhost:5000/datas/${params.id}`)
+          loader : ({params}) => fetch(`https://edu-care-server-beta.vercel.app/datas/${params.id}`)
         },
         {
           path:'/login',
