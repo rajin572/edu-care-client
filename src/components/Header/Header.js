@@ -33,10 +33,11 @@ const Header = () => {
             <Link className="a" to='/home'>Home</Link>
             <Link className="a" to='/course'>Course</Link>
             <Link className="a" to='/blog'>Blog</Link>
+            <Link className="a">FAQ</Link>
             <div>
               {
                 toggle === true?
-                <Button onClick={handleToggle} variant="outline-primary" size="sm">Light Mode</Button>
+                <Button onClick={handleToggle} variant="primary" size="sm">Light Mode</Button>
                 :
                 <Button onClick={handleToggle} variant="secondary" size="sm">Dark Mode</Button>
               }
