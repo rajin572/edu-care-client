@@ -48,7 +48,12 @@ const Header = () => {
               user?.uid? 
               <div className="d-flex">
                 <p className="mx-2">{user?.displayName}</p>
-                <img  className="mx-2" style={{height:'30px', borderRadius: "100%"}} src={user?.photoURL} alt="" />
+                <div className="navImg">
+                <img className="navImg mx-2" style={{height:'30px', borderRadius: "100%"}} src={user?.photoURL} alt="" />
+                <div class="sub-menu">
+                  <p><b>{user?.displayName}</b></p>
+                </div>
+                </div>
                 <Button className="mx-2"  variant="outline-dark" onClick={handleLogOut}>Log Out</Button>
               </div>
               :
