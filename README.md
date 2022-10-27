@@ -6,3 +6,12 @@ Fratures:
 => more secure website your data won't be hacked from our website
 => You can learn more new things from here
 => user friendly UI
+</br>
+Tecnology I have Used:
+=>React.js
+=>Bootstrap
+=>Firebase
+=>React-to-pdf package
+=>CSS
+=>HTML5
+=>JS
