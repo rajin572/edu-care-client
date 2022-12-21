@@ -30,6 +30,11 @@ function App() {
           element:<Course></Course>
         },
         {
+          path:'/course',
+          loader: () => fetch('https://edu-care-server-beta.vercel.app/datas'),
+          element:<Course></Course>
+        },
+        {
           path:'/courseDetails/:id',
           element:<CourseDetails></CourseDetails>,
           loader : ({params}) => fetch(`https://edu-care-server-beta.vercel.app/datas/${params.id}`)

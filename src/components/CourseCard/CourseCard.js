@@ -5,7 +5,6 @@ import './CourseCard.css'
 
 const CourseCard = ({data}) => {
     const {id, image, name, author, price} = data
-    console.log(data);
   return (
     <div className="cardContainer">
         <img src={image} alt="" />
