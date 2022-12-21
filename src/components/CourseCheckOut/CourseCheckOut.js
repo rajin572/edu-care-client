@@ -7,6 +7,7 @@ import './CourseCheckOut.css'
 
 const CourseCheckOut = () => {
     const {user} = useContext(AuthContext)
+    console.log(user);
     const data = useLoaderData()
     const {id, name, author, price, currentStudent} = data
     console.log(data);
@@ -16,7 +17,9 @@ const CourseCheckOut = () => {
             <div className='userDetails text-center'>
                 <img src={user?.photoURL} alt="" />
                 <h4>User Name: {user?.displayName}</h4>
-                <p>User Email: {user?.email}</p>
+                <h4>{
+                    user.email ? <>"Email: {user.email}"</> : "Email: Null"
+                    }</h4>
             </div>
             <div>
                 <div className='checkOut'>

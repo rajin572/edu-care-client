@@ -50,7 +50,8 @@ const Register = () => {
   }
   return (
     <Container>
-    <h2 className="text-center my-5">Welcome To Register Page</h2>
+    <h1 className="text-center my-5 text-primary">Register</h1>
+      <div className="authentication">
       <Form onSubmit={handleregister}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Your Name</Form.Label>
@@ -83,10 +84,11 @@ const Register = () => {
         <br />
         <Form.Text className="text-danger">{error}</Form.Text>
         <br />
-        <Button variant="primary" type="submit" disabled={!accepted}>
+        <Button className="d-block w-100" variant="primary" type="submit" disabled={!accepted}>
           Submit
         </Button>
       </Form>
+      </div>
     </Container>
   );
 };

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useContext } from "react";
 import { Button } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
@@ -10,15 +10,11 @@ import './Header.css'
 import logo from '../../images/pngwing.com.png'
 
 const Header = () => {
-  const [toggle , setToggle] = useState(false)
   const {user,logOut} = useContext(AuthContext)
   const handleLogOut = () =>{
     logOut()
     .then(()=>{})
     .catch(error => console.error(error))
-  }
-  const handleToggle = () =>{
-    setToggle(!toggle)
   }
   return (
     <Navbar className="border-3 border-bottom border-dark" collapseOnSelect expand="lg" bg="light" variant="light">
@@ -33,15 +29,6 @@ const Header = () => {
             <Link className="a" to='/home'>Home</Link>
             <Link className="a" to='/course'>Course</Link>
             <Link className="a" to='/blog'>Blog</Link>
-            <Link className="a">FAQ</Link>
-            <div>
-              {
-                toggle === true?
-                <Button onClick={handleToggle} variant="primary" size="sm">Light Mode</Button>
-                :
-                <Button onClick={handleToggle} variant="secondary" size="sm">Dark Mode</Button>
-              }
-            </div>
           </Nav>
           <Nav>
             {

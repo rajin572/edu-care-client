@@ -7,6 +7,7 @@ import Form from "react-bootstrap/Form";
 import { FaGithub, FaGoogle } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/AuthProvider";
+import './Login.css'
 
 const Login = () => {
     const [error, setError] = useState('')
@@ -63,7 +64,8 @@ const Login = () => {
     }
   return (
     <Container>
-      <h2 className="text-center my-5">Welcome To Login Page</h2>
+      <h1 className="text-center my-5 text-primary">Login</h1>
+      <div className="authentication">
       <Form onSubmit={HandleLogin}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
@@ -86,13 +88,14 @@ const Login = () => {
           Submit
         </Button>
       </Form>
-      <div className="my-5">
-        <h2 className="text-center">Or Using</h2>
+      <div className="mt-4">
+        <h4 className="text-center">Or Using</h4>
         <div className="d-lg-flex justify-content-between">
         <Button onClick={handleGoogleLogin} className="w-100 p-2" variant="primary"><FaGoogle></FaGoogle> Login With Google</Button>
-        <div className="m-3 text-center">OR</div>
+        <div className="mx-2 my-2 text-center">OR</div>
         <Button onClick={handleGithubLogin} className="w-100 p-2" variant="dark"><FaGithub></FaGithub> Login With GitHub</Button>
         </div>
+      </div>
       </div>
     </Container>
   );
