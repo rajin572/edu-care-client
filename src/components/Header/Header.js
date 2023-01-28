@@ -17,7 +17,7 @@ const Header = () => {
     .catch(error => console.error(error))
   }
   return (
-    <Navbar className="border-3 border-bottom border-dark" collapseOnSelect expand="lg" bg="light" variant="light">
+    <Navbar className="navbar" collapseOnSelect expand="lg">
       <Container>
         <Navbar.Brand className="logoAndName" href="">
           
@@ -25,7 +25,7 @@ const Header = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="mx-auto list-name">
             <Link className="a" to='/home'>Home</Link>
             <Link className="a" to='/course'>Course</Link>
             <Link className="a" to='/blog'>Blog</Link>
@@ -41,12 +41,12 @@ const Header = () => {
                   <p><b>{user?.displayName}</b></p>
                 </div>
                 </div>
-                <Button className="mx-2"  variant="outline-dark" onClick={handleLogOut}>Log Out</Button>
+                <button  className="mx-2 button-primary" onClick={handleLogOut}>Log Out</button>
               </div>
               :
               <>
-            <Link className="a" to='/login'><Button  variant="outline-primary">Login</Button></Link>
-            <Link className="a" to='/register'><Button  variant="outline-primary">Register</Button></Link>
+            <Link className="a" to='/login'><button className="button-primary" >Login</button></Link>
+            <Link className="a" to='/register'><button className="button-primary" >Register</button></Link>
               </>
             }
           </Nav>

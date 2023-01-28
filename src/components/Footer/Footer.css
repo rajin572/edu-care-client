@@ -1,0 +1,54 @@
+.mail-Section{
+    background-color: rgb(84, 181, 255);
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+}
+
+.mail-Section input {
+    background-color: white;
+    width: 60%;
+    padding: 10px 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+.mail-Section button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px 20px;
+}
+
+.footer{
+    text-align: center;
+    padding: 50px 0px;
+    background-color: rgb(35, 35, 35);
+    color: white;
+}
+
+@media only screen and (max-width: 900px) {
+    .mail-Section{
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .mail-Section input {
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .mail-Section{
+        padding: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .mail-Section input {
+        width: 60%;
+    }
+    .mail-Section button {
+        background-color: rgb(0, 0, 0);
+        color: white;
+        padding: 10px 15px;
+    }
+}
