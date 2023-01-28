@@ -33,13 +33,10 @@ const Header = () => {
           <Nav>
             {
               user?.uid? 
-              <div className="d-flex">
-                <p className="mx-2">{user?.displayName}</p>
+              <div className="userName-and-logout">
                 <div className="navImg">
-                <img className="navImg mx-2" style={{height:'30px', borderRadius: "100%"}} src={user?.photoURL} alt="" />
-                <div class="sub-menu">
-                  <p><b>{user?.displayName}</b></p>
-                </div>
+                <img style={{height:'30px', borderRadius: "100%"}} src={user?.photoURL} alt="" />
+                <p className="mx-2">{user?.displayName}</p>
                 </div>
                 <button  className="mx-2 button-primary" onClick={handleLogOut}>Log Out</button>
               </div>
