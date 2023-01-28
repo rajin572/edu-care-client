@@ -5,7 +5,7 @@ import Accordion from 'react-bootstrap/Accordion';
 const AccordionItem = () => {
   return (
     <Container className="my-5">
-      <h1 className="mb-5 text-center">Frequently Asked Questions</h1>
+      <h1 className="mb-5 text-center" style={{color:"#03B97C"}}>Frequently Asked Questions</h1>
       <Accordion defaultActiveKey={["0"]} alwaysOpen>
         <Accordion.Item eventKey="0">
           <Accordion.Header>Why You Should Chose EDU-Care</Accordion.Header>

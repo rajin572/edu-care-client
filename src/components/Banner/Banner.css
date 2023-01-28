@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 100px;
     background-color: rgba(123, 220, 181, 0.2);
     height: 100vh;
 }
@@ -47,7 +46,6 @@ height: 500px;
     .textContainer{
         width: 100%;
         padding: 20px;
-        margin-bottom: 50px;
     }
     .homepage img{
 display: none;

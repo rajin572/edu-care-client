@@ -1,5 +1,5 @@
 .mail-Section{
-    background-color: rgb(84, 181, 255);
+    background-color: #052044;
     padding: 50px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -24,7 +24,7 @@
 .footer{
     text-align: center;
     padding: 50px 0px;
-    background-color: rgb(35, 35, 35);
+    background-color: #052044;
     color: white;
 }
 
