@@ -1,0 +1,39 @@
+.Newslatter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 100px 0px;
+}
+.newsletterIcon-div{
+    background-color: #03B97C;
+    padding: 10px;
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+.newsletterIcon{
+    font-size: 30px;
+    color: #ffffff;
+}
+.subscribe{
+    margin-top: 20px;
+}
+.subscribe input{
+    width: 500px;
+    padding: 15px 10px;
+    border-radius: 14px; 
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.subscribe button{
+    padding: 8px 10px;
+    margin-left: -110px;
+    outline: none;
+    border-left: 1px solid black;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    background: none;
+}
