@@ -1,27 +1,32 @@
-.homepage{
+.homepage {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 100px;
     background-color: rgb(255, 255, 255);
 }
-.homepage img{
+
+.homepage img {
     width: 60%;
 }
-.textContainer{
+
+.textContainer {
     padding: 20px;
 }
-.textContainer h1{
+
+.textContainer h1 {
     font-size: 40px;
     font-weight: bold;
     margin: 10px 0px;
 }
+
 @media only screen and (max-width: 991px) {
-    .homepage{
+    .homepage {
         display: flex;
         flex-direction: column-reverse;
     }
-    .textContainer{
+
+    .textContainer {
         padding: 20px;
         margin-bottom: 50px;
     }
