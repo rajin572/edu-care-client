@@ -63,7 +63,7 @@ const Login = () => {
           })
     }
   return (
-    <Container>
+    <div className="registerbox">
       <div className="authentication">
       <h1 className="text-center my-3">Login</h1>
       <Form onSubmit={HandleLogin}>
@@ -72,7 +72,7 @@ const Login = () => {
           <Form.Control className="input" name="email" type="email" placeholder="Enter email" />
         </Form.Group>
 
-        <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Group className="" controlId="formBasicPassword">
           <Form.Label>Password</Form.Label>
           <Form.Control className="input"
             name="password"
@@ -80,24 +80,25 @@ const Login = () => {
             placeholder="Password"
           />
         </Form.Group>
-        <Form.Text className="my-5">Haven't Any Account ? <Link to='/register'>Please Register</Link></Form.Text>
+        <p className="error-massage">{error}</p>
         <br />
-        <Form.Text className="text-danger">{error}</Form.Text>
-        <br />
-        <Button variant="primary" type="submit">
+        <button className="submit-button" type="submit">
           Submit
-        </Button>
+        </button >
+        <div className="mt-3 warnText">
+        <Form.Text >Haven't Any Account ? <Link className="my-5 warnLink" to='/register'>Please Register</Link></Form.Text>
+        </div>
       </Form>
-      <div className="mt-4">
+      <div className="othersAccount mt-4">
         <h4 className="text-center">Or Using</h4>
-        <div className="d-lg-flex justify-content-between">
-        <Button onClick={handleGoogleLogin} className="w-100 p-2" variant="primary"><FaGoogle></FaGoogle> Login With Google</Button>
+        <div className="">
+        <button onClick={handleGoogleLogin} className="w-100 p-2" ><FaGoogle></FaGoogle> Login With Google</button>
         <div className="mx-2 my-2 text-center">OR</div>
-        <Button onClick={handleGithubLogin} className="w-100 p-2" variant="dark"><FaGithub></FaGithub> Login With GitHub</Button>
+        <button onClick={handleGithubLogin} className="w-100 p-2" ><FaGithub></FaGithub> Login With GitHub</button>
         </div>
       </div>
       </div>
-    </Container>
+    </div>
   );
 };
 

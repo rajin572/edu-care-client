@@ -2,25 +2,88 @@
     width: 40%;
     margin: auto;
     padding: 20px;
-    background-color: rgba(123, 220, 181, 0.2);
+    background-color: rgb(252, 252, 252);
     box-shadow: 0px 0px 10px rgba(123, 220, 181, 0.4);
     border-radius: 14px;
     margin-bottom: 50px;
 }
+
+.authentication h1{
+    color: #03B97C;
+}
+
 .authentication input{
     background-color: white;
     padding: 10px;
     border: 2px solid #03B97C;
-    color: #03B97C;
+    color: #000000;
     outline: none;
 }
-.authentication input{
+.authentication label{
+    color: #03B97C; 
+    font-weight: bold;
+}
+.authentication input:focus{
     background-color: white;
     border: 2px solid #03B97C;
-    color: #03B97C;
+    color: #000000;
     outline: none;
+    box-shadow: none;
+}
+.error-massage{
+    color: red;
+    font-weight: bold;
+    margin: 0px;
+}
+.submit-button{
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+    background-color: #03B97C;
+    border: 2px solid #03B97C;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+} 
+.submit-button:hover{
+    width: 100%;
+    padding: 10px 0px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #03B97C;
+} 
+
+.warnText{
+    color: #000000;
+    font-weight: bold;
+}
+.warnLink{
+    color: #000000;
+    text-decoration: none;
+}
+.warnLink:hover{
+    color: #03B97C;
 }
 
+.othersAccount h4{
+    color: #03B97C;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.othersAccount button{
+    background-color: #ffffff;
+    color: #03B97C;
+    border: 2px solid #03B97C;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.othersAccount button:hover{
+    background-color: #03B97C;
+    color: #ffffff;
+    border: 2px solid #03B97C;
+    border-radius: 5px;
+    transition: 1s;
+}
 @media only screen and (max-width: 991px) {
     .authentication{
         width: 70%;
