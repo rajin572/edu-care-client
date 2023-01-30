@@ -8,13 +8,15 @@ const CourseCard = ({data}) => {
   return (
     <div className="cardContainer">
         <img src={image} alt="" />
-        <div className="cardText">
-            <h4>{name}</h4>
-            <h2>Price: {price}$</h2>
-            <p>Author Name: <b>{author}</b></p>
+        <p className="course-price">
+          ${price}
+        </p>
+        <div className="Carddetails">
+            <h5> <b>{name}</b> </h5>
+            <p className="authorname"><b>by: {author}</b></p>
+            <div>
+        <Link to={`/courseDetails/${id}`} className="w-100"><button className="w-100 card-button">Course Details</button></Link>
         </div>
-        <div>
-        <Link to={`/courseDetails/${id}`} className="w-100"><Button className="w-100 mt-4">Course Details</Button></Link>
         </div>
     </div>
   );

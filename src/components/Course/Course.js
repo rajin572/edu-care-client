@@ -25,8 +25,7 @@ const Course = () => {
             </div>
           </Col>
           <Col lg="9">
-            <h2 className="my-5 text-center">Our Courses</h2>
-            <div className="courseCard">
+            <div className="my-5 courseCard">
             {courses.map((course) => (
                 <CourseCard key={course.id} data={course}></CourseCard>
               ))}
