@@ -8,11 +8,10 @@ const Course = () => {
   const courses = useLoaderData();
   return (
     <div>
-      <Container>
+        <div className="course">
         <Row>
           <Col className="leftNav" lg="3">
-            <h2 className="mb-5 text-center">Our Courses</h2>
-            <div>
+            <div className=" my-5">
               {courses.map((course) => (
                 <Link
                   className="courseLinks"
@@ -24,7 +23,7 @@ const Course = () => {
               ))}
             </div>
           </Col>
-          <Col lg="9">
+          <Col lg="9 px-5">
             <div className="my-5 courseCard">
             {courses.map((course) => (
                 <CourseCard key={course.id} data={course}></CourseCard>
@@ -32,7 +31,7 @@ const Course = () => {
             </div>
           </Col>
         </Row>
-      </Container>
+        </div>
     </div>
   );
 };

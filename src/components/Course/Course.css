@@ -1,10 +1,37 @@
+.course{
+    position: relative;
+}
+
+.leftNav{
+    background-color: #03B97C;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
 .courseLinks{
     display: block;
     padding: 5px 10px;
-    margin: 5px;
-    background-color: rgb(235, 235, 235);
-    color: black;
+    margin: 15px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #03B97C;
+    color: #03B97C;
     font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 1s;
+}
+.courseLinks:hover{
+    display: block;
+    padding: 5px 10px;
+    margin: 15px;
+    background-color: #03B97C;
+    border: 2px solid white;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 1s;
 }
 .courseCard{
     display: grid;
@@ -13,6 +40,11 @@
 }
 
 @media only screen and (max-width: 991px) {
+    .leftNav{
+        background-color: #03B97C;
+        position: static;
+        height: fit-content;
+    }
     .courseCard{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
