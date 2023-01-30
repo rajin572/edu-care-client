@@ -64,17 +64,17 @@ const Login = () => {
     }
   return (
     <Container>
-      <h1 className="text-center my-5 text-primary">Login</h1>
       <div className="authentication">
+      <h1 className="text-center my-3">Login</h1>
       <Form onSubmit={HandleLogin}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
-          <Form.Control name="email" type="email" placeholder="Enter email" />
+          <Form.Control className="input" name="email" type="email" placeholder="Enter email" />
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Label>Password</Form.Label>
-          <Form.Control
+          <Form.Control className="input"
             name="password"
             type="password"
             placeholder="Password"
