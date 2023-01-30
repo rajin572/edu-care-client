@@ -1,9 +1,15 @@
+.registerbox{
+    padding: 50px 0px;
+    background-color: rgba(123, 220, 181, 0.2);
+}
+
+
 .authentication{
     width: 40%;
     margin: auto;
     padding: 20px;
     background-color: rgb(252, 252, 252);
-    box-shadow: 0px 0px 10px rgba(123, 220, 181, 0.4);
+    box-shadow: 0px 0px 10px rgb(123, 220, 181);
     border-radius: 14px;
     margin-bottom: 50px;
 }
@@ -51,17 +57,24 @@
     border-radius: 5px;
     box-shadow: 0px 0px 5px #03B97C;
 } 
+.submit-button:disabled{
+    background-color: rgba(3, 185, 124, 0.5);
+    border: 2px solid rgba(3, 185, 124, 0.5);;
+    color: rgba(255, 255, 255, 0.555);
+} 
 
 .warnText{
     color: #000000;
     font-weight: bold;
 }
-.warnLink{
-    color: #000000;
-    text-decoration: none;
-}
 .warnLink:hover{
     color: #03B97C;
+}
+.warnLink{
+    color: #03B97C;
+    text-decoration: none;
+    font-weight: bolder;
+    
 }
 
 .othersAccount h4{
@@ -84,6 +97,9 @@
     border-radius: 5px;
     transition: 1s;
 }
+
+
+
 @media only screen and (max-width: 991px) {
     .authentication{
         width: 70%;

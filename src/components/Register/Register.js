@@ -49,9 +49,9 @@ const Register = () => {
     setAccepted(event.target.checked);
   }
   return (
-    <Container>
-    <h1 className="text-center my-5 text-primary">Register</h1>
+    <div className="registerbox">
       <div className="authentication">
+    <h1 className="text-center my-3">Register</h1>
       <Form onSubmit={handleregister}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Your Name</Form.Label>
@@ -77,19 +77,16 @@ const Register = () => {
             placeholder="Password"
           />
         </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          <Form.Check onClick={handleChecked} type="checkbox" label="Check me out" />
-        </Form.Group>
-        <Form.Text>Already Have An Account ? <Link to='/login'>Please Login</Link></Form.Text>
+        <p className="error-massage">{error}</p>
         <br />
-        <Form.Text className="text-danger">{error}</Form.Text>
-        <br />
-        <Button className="d-block w-100" variant="primary" type="submit" disabled={!accepted}>
+        <p className="warnText mb-3">Already Have An Account ? <Link className="warnLink" to='/login'>Please Login</Link></p>
+        <button className="submit-button" type="submit">
           Submit
-        </Button>
+        </button>
+        <br />
       </Form>
       </div>
-    </Container>
+    </div>
   );
 };
 

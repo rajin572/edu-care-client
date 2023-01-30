@@ -92,8 +92,7 @@ const Login = () => {
       <div className="othersAccount mt-4">
         <h4 className="text-center">Or Using</h4>
         <div className="">
-        <button onClick={handleGoogleLogin} className="w-100 p-2" ><FaGoogle></FaGoogle> Login With Google</button>
-        <div className="mx-2 my-2 text-center">OR</div>
+        <button onClick={handleGoogleLogin} className="w-100 p-2 mb-2" ><FaGoogle></FaGoogle> Login With Google</button>
         <button onClick={handleGithubLogin} className="w-100 p-2" ><FaGithub></FaGithub> Login With GitHub</button>
         </div>
       </div>
