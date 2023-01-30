@@ -1,5 +1,5 @@
 .nav-sticy{
-    height: 10vh;
+    height: fit-content;
     position: sticky;
     top: 0%;
     border-bottom: 2px solid #03B97C;

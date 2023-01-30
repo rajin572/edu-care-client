@@ -2,15 +2,22 @@
     position: relative;
 }
 
+.courses-section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+
 .leftNav{
     background-color: #03B97C;
     position: sticky;
     top: 10vh;
     height: 90vh;
-    z-index: -1;
 }
 
 .courseLinks{
+    cursor: pointer;
     display: block;
     padding: 5px 10px;
     margin: 15px;
@@ -40,12 +47,15 @@
     grid-gap: 20px 10px;
 }
 
-@media only screen and (max-width: 991px) {
-    .leftNav{
-        background-color: #03B97C;
-        position: static;
-        height: fit-content;
+
+@media only screen and (min-width: 665px) {
+    .courses-card-section{
+        grid-column: 2 / 5;
     }
+}
+
+
+@media only screen and (max-width:1024px) {
     .courseCard{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -53,7 +63,20 @@
     }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 665px) {
+    .leftNav{
+        background-color: #03B97C;
+        position: static;
+        height: fit-content;
+
+    }
+
+    .courses-section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+
     .courseCard{
         display: grid;
         grid-template-columns: repeat(1, 1fr);

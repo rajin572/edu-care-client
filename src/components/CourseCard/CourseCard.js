@@ -8,11 +8,11 @@ const CourseCard = ({data}) => {
     <div className="cardContainer">
         <img src={image} alt="" />
         <p className="course-price">
-          ${price}
+          TK.{price}
         </p>
         <div className="Carddetails">
             <h5> <b>{name}</b> </h5>
-            <p className="authorname"><b>by: {author}</b></p>
+            <p className="authorname"><b>By: {author}</b></p>
             <div>
         <Link to={`/courseDetails/${id}`} className="w-100"><button className="w-100 card-button">Course Details</button></Link>
         </div>
