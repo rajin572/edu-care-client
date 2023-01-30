@@ -1,8 +1,12 @@
-.navbar{
+.nav-sticy{
+    height: 10vh;
     position: sticky;
     top: 0%;
     border-bottom: 2px solid #03B97C;
+    background-color: white;
+    z-index: 99;
 }
+
 .list-name .a{
     font-size: 16px;
     color: black;

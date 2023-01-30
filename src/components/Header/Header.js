@@ -17,7 +17,8 @@ const Header = () => {
     .catch(error => console.error(error))
   }
   return (
-    <Navbar className="navbar" collapseOnSelect expand="lg">
+    <div className="nav-sticy">
+      <Navbar className="navbar" collapseOnSelect expand="lg">
       <Container>
         <Navbar.Brand className="logoAndName" href="">
           
@@ -50,6 +51,7 @@ const Header = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </div>
   );
 };
 
