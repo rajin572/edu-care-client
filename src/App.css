@@ -7,6 +7,21 @@
   text-align: center;
 }
 
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #03B97C;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb{
+  background: #03B97C;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-track{
+  background: rgb(222, 222, 222);
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
