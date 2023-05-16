@@ -6,10 +6,10 @@ import { AuthContext } from '../../context/AuthProvider';
 import './CourseCheckOut.css'
 
 const CourseCheckOut = () => {
-    const {user} = useContext(AuthContext)
+    const { user } = useContext(AuthContext)
     console.log(user);
     const data = useLoaderData()
-    const {id, name, author, price, currentStudent} = data
+    const { id, name, author, price, currentStudent } = data
     console.log(data);
     return (
         <div className='mt-5'>
@@ -19,7 +19,7 @@ const CourseCheckOut = () => {
                 <h4>User Name: {user?.displayName}</h4>
                 <h4>{
                     user.email ? <>"Email: {user.email}"</> : "Email: Null"
-                    }</h4>
+                }</h4>
             </div>
             <div>
                 <div className='checkOut'>
