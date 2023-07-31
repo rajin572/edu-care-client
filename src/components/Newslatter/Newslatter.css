@@ -42,3 +42,27 @@
     border-bottom: none;
     background: none;
 }
+
+
+@media only screen and (max-width: 650px) {
+    .subscribe input {
+        width: 250px;
+        padding: 10px 7px;
+        border-radius: 14px;
+        outline: none;
+        border: none;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .subscribe button {
+        padding: 8px 5px;
+        margin-left: -100px;
+        font-size: 14px;
+        outline: none;
+        border-left: 1px solid black;
+        border-right: none;
+        border-top: none;
+        border-bottom: none;
+        background: none;
+    }
+}
